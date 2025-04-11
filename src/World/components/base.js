@@ -44,7 +44,7 @@ function createBase(params) {
     textGeometry.computeBoundingBox()
     text.position.z = - (textGeometry.boundingBox.max.y - textGeometry.boundingBox.min.y) / 2
     base.add(text)
-    textGeometry = new TextGeometry('L', { font, size: 3, height: 0.3 })
+    textGeometry = new TextGeometry('E', { font, size: 3, height: 0.3 })
     text = new Mesh(textGeometry, fontMaterial)
     text.position.z = - params.radius - 6
     text.rotation.x = - Math.PI/2
